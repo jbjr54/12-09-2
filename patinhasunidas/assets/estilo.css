@@ -1,0 +1,319 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+}
+body {
+    background-color: #F8F9FA;
+    color: black;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+/* Estilo geral da navbar */
+#nav{
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e3e3e3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Ajuste a altura da imagem do logo */
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,...'); /* Substitua com uma imagem de ícone de cachorro ou um SVG relacionado a pets */
+}
+
+/* Estilo para a lista de navegação */
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Cor de destaque ao passar o mouse */
+    background-color: #f1f1f1; /* Fundo de destaque ao passar o mouse */
+    border-radius: 5px;
+}
+
+/* Ícones */
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 20px;
+    color: #007bff; /* Cor dos ícones */
+    margin-right: 8px;
+}
+
+#demo {
+    position: relative;
+    width: 100vw; /* Largura total da tela */
+    height: 500px; /* Altura ajustada do carrossel */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+}
+
+.carousel-inner {
+    height: 100%; /* Garante que o interior do carrossel preencha toda a altura */
+}
+
+.carousel-item img {
+    width: 100%; /* Faz com que a imagem se ajuste ao tamanho do carrossel */
+    height: 100%; /* Mantém a altura do carrossel */
+    object-fit: cover; /* Cobre toda a área sem distorcer */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 5%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 10px; /* Ajuste a distância do controle à esquerda */
+}
+
+.carousel-control-next {
+    right: 10px; /* Ajuste a distância do controle à direita */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo dos ícones */
+    border-radius: 50%; /* Bordas arredondadas dos ícones */
+}
+
+/* Estilo do footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #e3e3e3;
+    font-size: 14px;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #9ac1c6; /* Azul clarinho */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.upload-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #FFA500; /* Laranja */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.input_foto {
+    display: none; /* Oculta o botão padrão de upload */
+}
+
+.botao {
+    background-color: #FFA500; /* Laranja igual ao botão de upload */
+    color: #555;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.botao:hover {
+    background-color: #FF8C00;
+    transform: scale(1.02);
+}
+
+.botao:active {
+    background-color: #FF4500;
+    transform: scale(0.95);
+}
+
+/* Estilo dos campos do formulário */
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #293749;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão de envio */
+
+.botao2 {
+    padding: 16px 32px; /* Aumenta o padding para um botão maior */
+    background-color: #FFA500; /* Laranja */
+    color: white;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Garante que não haja sublinhado */
+    border-radius: 25px; /* Bordas arredondadas */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px; /* Espaço ao redor do botão */
+}
+
+.botao2:hover {
+    background-color: #FF8C00; /* Laranja mais escuro */
+    transform: scale(1.02); /* Efeito de aumento no hover */
+}
+
+.botao2:active {
+    background-color: #FF4500; /* Laranja ainda mais escuro quando pressionado */
+    transform: scale(0.95); /* Efeito de contração ao pressionar */
+}
+
+/* Estilo dos rótulos */
+.form-container label {
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+/* Estilo do título do formulário */
+.form-container h2 {
+    text-align: center;
+    color: black;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #152725;
+    margin-bottom: 10px;
+    resize: vertical;
+    height: 100px;
+}
+input[type="file"] {
+    margin-bottom: 10px;
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.cardzao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Alinha os cards à esquerda */
+    align-items: flex-start; /* Alinha os cards ao topo */
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para efeitos */
+    background-color: #fff; /* Fundo branco para o card */
+    border: 1px solid #ddd; /* Borda sutil */
+}
+
+.card-img {
+    width: 100%;
+    height: 200px; /* Ajustado para uma altura mais adequada */
+    object-fit: cover; /* Cobre toda a área da imagem sem distorcer */
+}
+
+.card-body {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555; /* Cor de texto mais suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de aumento no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
+}
+/* Responsividade */
+@media (max-width: 400px) {
+    .card_mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
